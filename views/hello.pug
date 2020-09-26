@@ -1,0 +1,17 @@
+doctype html
+//Assignment 4
+
+
+html(lang="en")
+  head
+    title hello​ Page
+  body
+    if name
+        h1 Welcome #{name}!
+    else
+        form(action='/myName', method='post')
+            label
+              h2 Please enter your name : 
+                input(type='text' , name='username')
+            button(type='submit') send
+            
